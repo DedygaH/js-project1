@@ -1,0 +1,53 @@
+.name-game {
+  position: absolute;
+  left: 15%;
+  filter: drop-shadow(5px 5px 30px #050133);
+}
+#game-container {
+  width: 500px;
+  height: 450px;
+  position: relative;
+  border: 5px solid green;
+}
+#startButton {
+  color: blue;
+  font-size: 28px;
+  font-weight: bold;
+}
+.target {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  cursor: pointer;
+}
+
+.target.explode {
+  animation: explode 0.2s linear;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+#cursor {
+  position: absolute;
+  width: 10%;
+  /* cursor: url(x,y);
+
+  top: 24%;
+  left: 25%; */
+}
+
